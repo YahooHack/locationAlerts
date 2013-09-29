@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* CommunicationLibraryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CommunicationLibraryAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		5ADC6AF0176AE4100056A4FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADC6AEF176AE4100056A4FF /* SystemConfiguration.framework */; };
+		6F1589661611005D00511736 /* CommunicationLibrary_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CommunicationLibrary_Prefix.pch */; };
+		6F1589671611005D00511736 /* CommunicationConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF75F13AE51EB0022E71C /* CommunicationConstant.h */; };
+		6F1589681611005D00511736 /* CommunicationEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76013AE51EB0022E71C /* CommunicationEnumeration.h */; };
+		6F1589691611005D00511736 /* CommContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76213AE51EB0022E71C /* CommContainer.h */; };
+		6F15896A1611005D00511736 /* CommDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76413AE51EB0022E71C /* CommDataContainer.h */; };
+		6F15896B1611005D00511736 /* CommImageContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76613AE51EB0022E71C /* CommImageContainer.h */; };
+		6F15896C1611005D00511736 /* CommunicationEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76913AE51EB0022E71C /* CommunicationEngine.h */; };
+		6F15896D1611005D00511736 /* CommunicationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76C13AE51EB0022E71C /* CommunicationEvent.h */; };
+		6F15896E1611005D00511736 /* HttpCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76F13AE51EB0022E71C /* HttpCommunication.h */; };
+		6F15896F1611005D00511736 /* Request.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77113AE51EB0022E71C /* Request.h */; };
+		6F1589701611005D00511736 /* RequestCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77313AE51EB0022E71C /* RequestCreation.h */; };
+		6F1589711611005D00511736 /* Response.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77513AE51EB0022E71C /* Response.h */; };
+		6F1589721611005D00511736 /* IdleTimerNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77813AE51EB0022E71C /* IdleTimerNotifier.h */; };
+		6F1589731611005D00511736 /* CommunicationUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77B13AE51EB0022E71C /* CommunicationUtility.h */; };
+		6F1589741611005D00511736 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF7A213AE51FF0022E71C /* Reachability.h */; };
+		6F1589761611005D00511736 /* CommContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76313AE51EB0022E71C /* CommContainer.m */; };
+		6F1589771611005D00511736 /* CommDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76513AE51EB0022E71C /* CommDataContainer.m */; };
+		6F1589781611005D00511736 /* CommImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76713AE51EB0022E71C /* CommImageContainer.m */; };
+		6F1589791611005D00511736 /* CommunicationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76A13AE51EB0022E71C /* CommunicationEngine.m */; };
+		6F15897A1611005D00511736 /* CommunicationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76D13AE51EB0022E71C /* CommunicationEvent.m */; };
+		6F15897B1611005D00511736 /* HttpCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77013AE51EB0022E71C /* HttpCommunication.m */; };
+		6F15897C1611005D00511736 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77213AE51EB0022E71C /* Request.m */; };
+		6F15897D1611005D00511736 /* RequestCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77413AE51EB0022E71C /* RequestCreation.m */; };
+		6F15897E1611005D00511736 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77613AE51EB0022E71C /* Response.m */; };
+		6F15897F1611005D00511736 /* IdleTimerNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77913AE51EB0022E71C /* IdleTimerNotifier.m */; };
+		6F1589801611005D00511736 /* CommunicationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77C13AE51EB0022E71C /* CommunicationUtility.m */; };
+		6F1589811611005D00511736 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF7A313AE51FF0022E71C /* Reachability.m */; };
+		FA9AB3F512D639740058E8DB /* CommunicationLibrary_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CommunicationLibrary_Prefix.pch */; };
+		FF0DF77D13AE51EB0022E71C /* CommunicationConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF75F13AE51EB0022E71C /* CommunicationConstant.h */; };
+		FF0DF77E13AE51EB0022E71C /* CommunicationEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76013AE51EB0022E71C /* CommunicationEnumeration.h */; };
+		FF0DF77F13AE51EB0022E71C /* CommContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76213AE51EB0022E71C /* CommContainer.h */; };
+		FF0DF78013AE51EB0022E71C /* CommContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76313AE51EB0022E71C /* CommContainer.m */; };
+		FF0DF78113AE51EB0022E71C /* CommContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76313AE51EB0022E71C /* CommContainer.m */; };
+		FF0DF78213AE51EB0022E71C /* CommDataContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76413AE51EB0022E71C /* CommDataContainer.h */; };
+		FF0DF78313AE51EB0022E71C /* CommDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76513AE51EB0022E71C /* CommDataContainer.m */; };
+		FF0DF78413AE51EB0022E71C /* CommDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76513AE51EB0022E71C /* CommDataContainer.m */; };
+		FF0DF78513AE51EB0022E71C /* CommImageContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76613AE51EB0022E71C /* CommImageContainer.h */; };
+		FF0DF78613AE51EB0022E71C /* CommImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76713AE51EB0022E71C /* CommImageContainer.m */; };
+		FF0DF78713AE51EB0022E71C /* CommImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76713AE51EB0022E71C /* CommImageContainer.m */; };
+		FF0DF78813AE51EB0022E71C /* CommunicationEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76913AE51EB0022E71C /* CommunicationEngine.h */; };
+		FF0DF78913AE51EB0022E71C /* CommunicationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76A13AE51EB0022E71C /* CommunicationEngine.m */; };
+		FF0DF78A13AE51EB0022E71C /* CommunicationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76A13AE51EB0022E71C /* CommunicationEngine.m */; };
+		FF0DF78B13AE51EB0022E71C /* CommunicationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76C13AE51EB0022E71C /* CommunicationEvent.h */; };
+		FF0DF78C13AE51EB0022E71C /* CommunicationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76D13AE51EB0022E71C /* CommunicationEvent.m */; };
+		FF0DF78D13AE51EB0022E71C /* CommunicationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF76D13AE51EB0022E71C /* CommunicationEvent.m */; };
+		FF0DF78E13AE51EB0022E71C /* HttpCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF76F13AE51EB0022E71C /* HttpCommunication.h */; };
+		FF0DF78F13AE51EB0022E71C /* HttpCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77013AE51EB0022E71C /* HttpCommunication.m */; };
+		FF0DF79013AE51EB0022E71C /* HttpCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77013AE51EB0022E71C /* HttpCommunication.m */; };
+		FF0DF79113AE51EB0022E71C /* Request.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77113AE51EB0022E71C /* Request.h */; };
+		FF0DF79213AE51EB0022E71C /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77213AE51EB0022E71C /* Request.m */; };
+		FF0DF79313AE51EB0022E71C /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77213AE51EB0022E71C /* Request.m */; };
+		FF0DF79413AE51EB0022E71C /* RequestCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77313AE51EB0022E71C /* RequestCreation.h */; };
+		FF0DF79513AE51EB0022E71C /* RequestCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77413AE51EB0022E71C /* RequestCreation.m */; };
+		FF0DF79613AE51EB0022E71C /* RequestCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77413AE51EB0022E71C /* RequestCreation.m */; };
+		FF0DF79713AE51EB0022E71C /* Response.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77513AE51EB0022E71C /* Response.h */; };
+		FF0DF79813AE51EB0022E71C /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77613AE51EB0022E71C /* Response.m */; };
+		FF0DF79913AE51EB0022E71C /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77613AE51EB0022E71C /* Response.m */; };
+		FF0DF79A13AE51EB0022E71C /* IdleTimerNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77813AE51EB0022E71C /* IdleTimerNotifier.h */; };
+		FF0DF79B13AE51EB0022E71C /* IdleTimerNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77913AE51EB0022E71C /* IdleTimerNotifier.m */; };
+		FF0DF79C13AE51EB0022E71C /* IdleTimerNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77913AE51EB0022E71C /* IdleTimerNotifier.m */; };
+		FF0DF79D13AE51EB0022E71C /* CommunicationUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF77B13AE51EB0022E71C /* CommunicationUtility.h */; };
+		FF0DF79E13AE51EB0022E71C /* CommunicationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77C13AE51EB0022E71C /* CommunicationUtility.m */; };
+		FF0DF79F13AE51EB0022E71C /* CommunicationUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF77C13AE51EB0022E71C /* CommunicationUtility.m */; };
+		FF0DF7A413AE51FF0022E71C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0DF7A213AE51FF0022E71C /* Reachability.h */; };
+		FF0DF7A513AE51FF0022E71C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF7A313AE51FF0022E71C /* Reachability.m */; };
+		FF0DF7A613AE51FF0022E71C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0DF7A313AE51FF0022E71C /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* CommunicationLibraryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationLibraryAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* CommunicationLibraryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationLibraryAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* CommunicationLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommunicationLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CommunicationLibrary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationLibrary_Prefix.pch; sourceTree = "<group>"; };
+		5ADC6AEF176AE4100056A4FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6F1589861611005D00511736 /* libCommunication-Devicev1.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCommunication-Devicev1.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* CommunicationLibrary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CommunicationLibrary-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FA9517161199E22300937DED /* libCommunication-Simulatorv1.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCommunication-Simulatorv1.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0DF75F13AE51EB0022E71C /* CommunicationConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationConstant.h; sourceTree = "<group>"; };
+		FF0DF76013AE51EB0022E71C /* CommunicationEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationEnumeration.h; sourceTree = "<group>"; };
+		FF0DF76213AE51EB0022E71C /* CommContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommContainer.h; sourceTree = "<group>"; };
+		FF0DF76313AE51EB0022E71C /* CommContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommContainer.m; sourceTree = "<group>"; };
+		FF0DF76413AE51EB0022E71C /* CommDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommDataContainer.h; sourceTree = "<group>"; };
+		FF0DF76513AE51EB0022E71C /* CommDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommDataContainer.m; sourceTree = "<group>"; };
+		FF0DF76613AE51EB0022E71C /* CommImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommImageContainer.h; sourceTree = "<group>"; };
+		FF0DF76713AE51EB0022E71C /* CommImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommImageContainer.m; sourceTree = "<group>"; };
+		FF0DF76913AE51EB0022E71C /* CommunicationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationEngine.h; sourceTree = "<group>"; };
+		FF0DF76A13AE51EB0022E71C /* CommunicationEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationEngine.m; sourceTree = "<group>"; };
+		FF0DF76C13AE51EB0022E71C /* CommunicationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationEvent.h; sourceTree = "<group>"; };
+		FF0DF76D13AE51EB0022E71C /* CommunicationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationEvent.m; sourceTree = "<group>"; };
+		FF0DF76F13AE51EB0022E71C /* HttpCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpCommunication.h; sourceTree = "<group>"; };
+		FF0DF77013AE51EB0022E71C /* HttpCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpCommunication.m; sourceTree = "<group>"; };
+		FF0DF77113AE51EB0022E71C /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		FF0DF77213AE51EB0022E71C /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		FF0DF77313AE51EB0022E71C /* RequestCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestCreation.h; sourceTree = "<group>"; };
+		FF0DF77413AE51EB0022E71C /* RequestCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestCreation.m; sourceTree = "<group>"; };
+		FF0DF77513AE51EB0022E71C /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		FF0DF77613AE51EB0022E71C /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		FF0DF77813AE51EB0022E71C /* IdleTimerNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleTimerNotifier.h; sourceTree = "<group>"; };
+		FF0DF77913AE51EB0022E71C /* IdleTimerNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdleTimerNotifier.m; sourceTree = "<group>"; };
+		FF0DF77B13AE51EB0022E71C /* CommunicationUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationUtility.h; sourceTree = "<group>"; };
+		FF0DF77C13AE51EB0022E71C /* CommunicationUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationUtility.m; sourceTree = "<group>"; };
+		FF0DF7A213AE51FF0022E71C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FF0DF7A313AE51FF0022E71C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADC6AF0176AE4100056A4FF /* SystemConfiguration.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1589821611005D00511736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9517141199E22300937DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* CommunicationLibraryAppDelegate.h */,
+				1D3623250D0F684500981E51 /* CommunicationLibraryAppDelegate.m */,
+				FF0DF75D13AE51EB0022E71C /* Communication */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CommunicationLibrary.app */,
+				FA9517161199E22300937DED /* libCommunication-Simulatorv1.0.a */,
+				6F1589861611005D00511736 /* libCommunication-Devicev1.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				FF0DF7A013AE51FF0022E71C /* Open Framework */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* CommunicationLibrary_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* CommunicationLibrary-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC6AEF176AE4100056A4FF /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0DF75D13AE51EB0022E71C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF75E13AE51EB0022E71C /* Constant */,
+				FF0DF76113AE51EB0022E71C /* Container */,
+				FF0DF76813AE51EB0022E71C /* Engine */,
+				FF0DF76B13AE51EB0022E71C /* Event */,
+				FF0DF76E13AE51EB0022E71C /* HTTP */,
+				FF0DF77713AE51EB0022E71C /* IdleNotifier */,
+				FF0DF77A13AE51EB0022E71C /* Utility */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		FF0DF75E13AE51EB0022E71C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF75F13AE51EB0022E71C /* CommunicationConstant.h */,
+				FF0DF76013AE51EB0022E71C /* CommunicationEnumeration.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FF0DF76113AE51EB0022E71C /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF76213AE51EB0022E71C /* CommContainer.h */,
+				FF0DF76313AE51EB0022E71C /* CommContainer.m */,
+				FF0DF76413AE51EB0022E71C /* CommDataContainer.h */,
+				FF0DF76513AE51EB0022E71C /* CommDataContainer.m */,
+				FF0DF76613AE51EB0022E71C /* CommImageContainer.h */,
+				FF0DF76713AE51EB0022E71C /* CommImageContainer.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		FF0DF76813AE51EB0022E71C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF76913AE51EB0022E71C /* CommunicationEngine.h */,
+				FF0DF76A13AE51EB0022E71C /* CommunicationEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		FF0DF76B13AE51EB0022E71C /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF76C13AE51EB0022E71C /* CommunicationEvent.h */,
+				FF0DF76D13AE51EB0022E71C /* CommunicationEvent.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		FF0DF76E13AE51EB0022E71C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF76F13AE51EB0022E71C /* HttpCommunication.h */,
+				FF0DF77013AE51EB0022E71C /* HttpCommunication.m */,
+				FF0DF77113AE51EB0022E71C /* Request.h */,
+				FF0DF77213AE51EB0022E71C /* Request.m */,
+				FF0DF77313AE51EB0022E71C /* RequestCreation.h */,
+				FF0DF77413AE51EB0022E71C /* RequestCreation.m */,
+				FF0DF77513AE51EB0022E71C /* Response.h */,
+				FF0DF77613AE51EB0022E71C /* Response.m */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		FF0DF77713AE51EB0022E71C /* IdleNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF77813AE51EB0022E71C /* IdleTimerNotifier.h */,
+				FF0DF77913AE51EB0022E71C /* IdleTimerNotifier.m */,
+			);
+			path = IdleNotifier;
+			sourceTree = "<group>";
+		};
+		FF0DF77A13AE51EB0022E71C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF77B13AE51EB0022E71C /* CommunicationUtility.h */,
+				FF0DF77C13AE51EB0022E71C /* CommunicationUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FF0DF7A013AE51FF0022E71C /* Open Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF7A113AE51FF0022E71C /* Reachability */,
+			);
+			path = "Open Framework";
+			sourceTree = "<group>";
+		};
+		FF0DF7A113AE51FF0022E71C /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FF0DF7A213AE51FF0022E71C /* Reachability.h */,
+				FF0DF7A313AE51FF0022E71C /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F1589651611005D00511736 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1589661611005D00511736 /* CommunicationLibrary_Prefix.pch in Headers */,
+				6F1589671611005D00511736 /* CommunicationConstant.h in Headers */,
+				6F1589681611005D00511736 /* CommunicationEnumeration.h in Headers */,
+				6F1589691611005D00511736 /* CommContainer.h in Headers */,
+				6F15896A1611005D00511736 /* CommDataContainer.h in Headers */,
+				6F15896B1611005D00511736 /* CommImageContainer.h in Headers */,
+				6F15896C1611005D00511736 /* CommunicationEngine.h in Headers */,
+				6F15896D1611005D00511736 /* CommunicationEvent.h in Headers */,
+				6F15896E1611005D00511736 /* HttpCommunication.h in Headers */,
+				6F15896F1611005D00511736 /* Request.h in Headers */,
+				6F1589701611005D00511736 /* RequestCreation.h in Headers */,
+				6F1589711611005D00511736 /* Response.h in Headers */,
+				6F1589721611005D00511736 /* IdleTimerNotifier.h in Headers */,
+				6F1589731611005D00511736 /* CommunicationUtility.h in Headers */,
+				6F1589741611005D00511736 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9517121199E22300937DED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9AB3F512D639740058E8DB /* CommunicationLibrary_Prefix.pch in Headers */,
+				FF0DF77D13AE51EB0022E71C /* CommunicationConstant.h in Headers */,
+				FF0DF77E13AE51EB0022E71C /* CommunicationEnumeration.h in Headers */,
+				FF0DF77F13AE51EB0022E71C /* CommContainer.h in Headers */,
+				FF0DF78213AE51EB0022E71C /* CommDataContainer.h in Headers */,
+				FF0DF78513AE51EB0022E71C /* CommImageContainer.h in Headers */,
+				FF0DF78813AE51EB0022E71C /* CommunicationEngine.h in Headers */,
+				FF0DF78B13AE51EB0022E71C /* CommunicationEvent.h in Headers */,
+				FF0DF78E13AE51EB0022E71C /* HttpCommunication.h in Headers */,
+				FF0DF79113AE51EB0022E71C /* Request.h in Headers */,
+				FF0DF79413AE51EB0022E71C /* RequestCreation.h in Headers */,
+				FF0DF79713AE51EB0022E71C /* Response.h in Headers */,
+				FF0DF79A13AE51EB0022E71C /* IdleTimerNotifier.h in Headers */,
+				FF0DF79D13AE51EB0022E71C /* CommunicationUtility.h in Headers */,
+				FF0DF7A413AE51FF0022E71C /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CommunicationLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CommunicationLibrary" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommunicationLibrary;
+			productName = CommunicationLibrary;
+			productReference = 1D6058910D05DD3D006BFB54 /* CommunicationLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F1589641611005D00511736 /* LibCommunication device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1589831611005D00511736 /* Build configuration list for PBXNativeTarget "LibCommunication device" */;
+			buildPhases = (
+				6F1589651611005D00511736 /* Headers */,
+				6F1589751611005D00511736 /* Sources */,
+				6F1589821611005D00511736 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LibCommunication device";
+			productName = LibCommunication;
+			productReference = 6F1589861611005D00511736 /* libCommunication-Devicev1.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA9517151199E22300937DED /* LibCommunication simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA95171F1199E24B00937DED /* Build configuration list for PBXNativeTarget "LibCommunication simulator" */;
+			buildPhases = (
+				FA9517121199E22300937DED /* Headers */,
+				FA9517131199E22300937DED /* Sources */,
+				FA9517141199E22300937DED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LibCommunication simulator";
+			productName = LibCommunication;
+			productReference = FA9517161199E22300937DED /* libCommunication-Simulatorv1.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CommunicationLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CommunicationLibrary */,
+				FA9517151199E22300937DED /* LibCommunication simulator */,
+				6F1589641611005D00511736 /* LibCommunication device */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* CommunicationLibraryAppDelegate.m in Sources */,
+				FF0DF78013AE51EB0022E71C /* CommContainer.m in Sources */,
+				FF0DF78313AE51EB0022E71C /* CommDataContainer.m in Sources */,
+				FF0DF78613AE51EB0022E71C /* CommImageContainer.m in Sources */,
+				FF0DF78913AE51EB0022E71C /* CommunicationEngine.m in Sources */,
+				FF0DF78C13AE51EB0022E71C /* CommunicationEvent.m in Sources */,
+				FF0DF78F13AE51EB0022E71C /* HttpCommunication.m in Sources */,
+				FF0DF79213AE51EB0022E71C /* Request.m in Sources */,
+				FF0DF79513AE51EB0022E71C /* RequestCreation.m in Sources */,
+				FF0DF79813AE51EB0022E71C /* Response.m in Sources */,
+				FF0DF79B13AE51EB0022E71C /* IdleTimerNotifier.m in Sources */,
+				FF0DF79E13AE51EB0022E71C /* CommunicationUtility.m in Sources */,
+				FF0DF7A513AE51FF0022E71C /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1589751611005D00511736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1589761611005D00511736 /* CommContainer.m in Sources */,
+				6F1589771611005D00511736 /* CommDataContainer.m in Sources */,
+				6F1589781611005D00511736 /* CommImageContainer.m in Sources */,
+				6F1589791611005D00511736 /* CommunicationEngine.m in Sources */,
+				6F15897A1611005D00511736 /* CommunicationEvent.m in Sources */,
+				6F15897B1611005D00511736 /* HttpCommunication.m in Sources */,
+				6F15897C1611005D00511736 /* Request.m in Sources */,
+				6F15897D1611005D00511736 /* RequestCreation.m in Sources */,
+				6F15897E1611005D00511736 /* Response.m in Sources */,
+				6F15897F1611005D00511736 /* IdleTimerNotifier.m in Sources */,
+				6F1589801611005D00511736 /* CommunicationUtility.m in Sources */,
+				6F1589811611005D00511736 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9517131199E22300937DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0DF78113AE51EB0022E71C /* CommContainer.m in Sources */,
+				FF0DF78413AE51EB0022E71C /* CommDataContainer.m in Sources */,
+				FF0DF78713AE51EB0022E71C /* CommImageContainer.m in Sources */,
+				FF0DF78A13AE51EB0022E71C /* CommunicationEngine.m in Sources */,
+				FF0DF78D13AE51EB0022E71C /* CommunicationEvent.m in Sources */,
+				FF0DF79013AE51EB0022E71C /* HttpCommunication.m in Sources */,
+				FF0DF79313AE51EB0022E71C /* Request.m in Sources */,
+				FF0DF79613AE51EB0022E71C /* RequestCreation.m in Sources */,
+				FF0DF79913AE51EB0022E71C /* Response.m in Sources */,
+				FF0DF79C13AE51EB0022E71C /* IdleTimerNotifier.m in Sources */,
+				FF0DF79F13AE51EB0022E71C /* CommunicationUtility.m in Sources */,
+				FF0DF7A613AE51FF0022E71C /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CommunicationLibrary_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CommunicationLibrary-Info.plist";
+				PRODUCT_NAME = CommunicationLibrary;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CommunicationLibrary_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "CommunicationLibrary-Info.plist";
+				PRODUCT_NAME = CommunicationLibrary;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F1589841611005D00511736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Communication-Devicev1.0";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6F1589851611005D00511736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Communication-Devicev1.0";
+				SKIP_INSTALL = YES;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FA9517171199E22300937DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Communication-Simulatorv1.0";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA9517181199E22300937DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
+				PRODUCT_NAME = "Communication-Simulatorv1.0";
+				SKIP_INSTALL = YES;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CommunicationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1589831611005D00511736 /* Build configuration list for PBXNativeTarget "LibCommunication device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F1589841611005D00511736 /* Debug */,
+				6F1589851611005D00511736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CommunicationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA95171F1199E24B00937DED /* Build configuration list for PBXNativeTarget "LibCommunication simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9517171199E22300937DED /* Debug */,
+				FA9517181199E22300937DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

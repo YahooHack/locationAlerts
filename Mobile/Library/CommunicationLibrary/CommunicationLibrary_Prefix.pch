@@ -1,0 +1,27 @@
+//
+// Prefix header for all source files of the 'CommunicationLibrary' target in the 'CommunicationLibrary' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+	// Utility
+	#import "CommunicationUtility.h"
+
+	// Constant
+	#import "CommunicationConstant.h"
+	#import "CommunicationEnumeration.h"
+	
+	// Communication
+	#import "Request.h"
+	#import "Response.h"
+	#import "RequestCreation.h"
+
+	// Container
+	#import "CommContainer.h"
+	#import "CommDataContainer.h"
+	#import "CommImageContainer.h"
+
+
+#endif

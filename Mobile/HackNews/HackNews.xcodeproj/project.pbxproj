@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A9042CC17F77FCB005183D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042CB17F77FCB005183D7 /* Foundation.framework */; };
+		5A9042CE17F77FCB005183D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042CD17F77FCB005183D7 /* CoreGraphics.framework */; };
+		5A9042D017F77FCB005183D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042CF17F77FCB005183D7 /* UIKit.framework */; };
+		5A9042D217F77FCB005183D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042D117F77FCB005183D7 /* CoreData.framework */; };
+		5A9042D817F77FCB005183D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9042D617F77FCB005183D7 /* InfoPlist.strings */; };
+		5A9042DA17F77FCB005183D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9042D917F77FCB005183D7 /* main.m */; };
+		5A9042E117F77FCB005183D7 /* HackNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A9042DF17F77FCB005183D7 /* HackNews.xcdatamodeld */; };
+		5A9042E317F77FCB005183D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9042E217F77FCB005183D7 /* Images.xcassets */; };
+		5A9042EA17F77FCB005183D7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042E917F77FCB005183D7 /* XCTest.framework */; };
+		5A9042EB17F77FCB005183D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042CB17F77FCB005183D7 /* Foundation.framework */; };
+		5A9042EC17F77FCB005183D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042CF17F77FCB005183D7 /* UIKit.framework */; };
+		5A9042ED17F77FCB005183D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9042D117F77FCB005183D7 /* CoreData.framework */; };
+		5A9042F517F77FCB005183D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9042F317F77FCB005183D7 /* InfoPlist.strings */; };
+		5A9042F717F77FCB005183D7 /* HackNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9042F617F77FCB005183D7 /* HackNewsTests.m */; };
+		5A90430817F7809E005183D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90430717F7809E005183D7 /* AppDelegate.m */; };
+		5A90430917F7809E005183D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A90430717F7809E005183D7 /* AppDelegate.m */; };
+		5AEABD3417F7CDB900A0A8E7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD3217F7CDB900A0A8E7 /* RegisterViewController.m */; };
+		5AEABD3517F7CDB900A0A8E7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD3217F7CDB900A0A8E7 /* RegisterViewController.m */; };
+		5AEABD3617F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD3317F7CDB900A0A8E7 /* RegisterViewController.xib */; };
+		5AEABD3717F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD3317F7CDB900A0A8E7 /* RegisterViewController.xib */; };
+		5AEABD4017F7D02600A0A8E7 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD3F17F7D02600A0A8E7 /* LocationManager.m */; };
+		5AEABD4117F7D02600A0A8E7 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD3F17F7D02600A0A8E7 /* LocationManager.m */; };
+		5AEABD4517F7D8D000A0A8E7 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD4417F7D8D000A0A8E7 /* Event.m */; };
+		5AEABD4617F7D8D000A0A8E7 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD4417F7D8D000A0A8E7 /* Event.m */; };
+		5AEABD4817F7D9A000A0A8E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEABD4717F7D9A000A0A8E7 /* CoreLocation.framework */; };
+		5AEABD6517F7DB0600A0A8E7 /* libGeneral-Simulatorv1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEABD6017F7DAF500A0A8E7 /* libGeneral-Simulatorv1.0.a */; };
+		5AEABD6717F7DBD300A0A8E7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEABD6617F7DBD300A0A8E7 /* AudioToolbox.framework */; };
+		5AEABD7A17F7FAF000A0A8E7 /* libCommunication-Simulatorv1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEABD7517F7FA7800A0A8E7 /* libCommunication-Simulatorv1.0.a */; };
+		5AEABD7D17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD7C17F7FB7600A0A8E7 /* CommunicationManager.m */; };
+		5AEABD7E17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD7C17F7FB7600A0A8E7 /* CommunicationManager.m */; };
+		5AEABD8B17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD8A17F80AB500A0A8E7 /* ResponseParserEngine.m */; };
+		5AEABD8C17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABD8A17F80AB500A0A8E7 /* ResponseParserEngine.m */; };
+		5AEABD9217F811E500A0A8E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEABD9117F811E500A0A8E7 /* SystemConfiguration.framework */; };
+		5AEABD9817F81E2E00A0A8E7 /* BackroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */; };
+		5AEABD9917F81E2E00A0A8E7 /* BackroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */; };
+		5AEABD9A17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */; };
+		5AEABD9B17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A9042EE17F77FCB005183D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9042C017F77FCB005183D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A9042C717F77FCB005183D7;
+			remoteInfo = HackNews;
+		};
+		5AEABD5D17F7DAF500A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = GeneralLibrary;
+		};
+		5AEABD5F17F7DAF500A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAE410C911A46653000CEA22;
+			remoteInfo = "LibGeneral simulator";
+		};
+		5AEABD6117F7DAF500A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F40B9A614DC9CCC005F0562;
+			remoteInfo = "LibGeneral device";
+		};
+		5AEABD6317F7DB0100A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE410C811A46653000CEA22;
+			remoteInfo = "LibGeneral simulator";
+		};
+		5AEABD7217F7FA7800A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = CommunicationLibrary;
+		};
+		5AEABD7417F7FA7800A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA9517161199E22300937DED;
+			remoteInfo = "LibCommunication simulator";
+		};
+		5AEABD7617F7FA7800A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F1589861611005D00511736;
+			remoteInfo = "LibCommunication device";
+		};
+		5AEABD7817F7FAE800A0A8E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9517151199E22300937DED;
+			remoteInfo = "LibCommunication simulator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A9042C817F77FCB005183D7 /* HackNews Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackNews Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9042CB17F77FCB005183D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A9042CD17F77FCB005183D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A9042CF17F77FCB005183D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A9042D117F77FCB005183D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5A9042D517F77FCB005183D7 /* HackNews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackNews-Info.plist"; sourceTree = "<group>"; };
+		5A9042D717F77FCB005183D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A9042D917F77FCB005183D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A9042DB17F77FCB005183D7 /* HackNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackNews-Prefix.pch"; sourceTree = "<group>"; };
+		5A9042E017F77FCB005183D7 /* HackNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackNews.xcdatamodel; sourceTree = "<group>"; };
+		5A9042E217F77FCB005183D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A9042E817F77FCB005183D7 /* HackNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9042E917F77FCB005183D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5A9042F217F77FCB005183D7 /* HackNewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackNewsTests-Info.plist"; sourceTree = "<group>"; };
+		5A9042F417F77FCB005183D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A9042F617F77FCB005183D7 /* HackNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackNewsTests.m; sourceTree = "<group>"; };
+		5A90430617F7809E005183D7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A90430717F7809E005183D7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5AEABD3117F7CDB900A0A8E7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		5AEABD3217F7CDB900A0A8E7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		5AEABD3317F7CDB900A0A8E7 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		5AEABD3E17F7D02600A0A8E7 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		5AEABD3F17F7D02600A0A8E7 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		5AEABD4317F7D8D000A0A8E7 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		5AEABD4417F7D8D000A0A8E7 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		5AEABD4717F7D9A000A0A8E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GeneralLibrary.xcodeproj; path = ../../../Library/GeneralLibrary/GeneralLibrary.xcodeproj; sourceTree = "<group>"; };
+		5AEABD6617F7DBD300A0A8E7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommunicationLibrary.xcodeproj; path = ../../../Library/CommunicationLibrary/CommunicationLibrary.xcodeproj; sourceTree = "<group>"; };
+		5AEABD7B17F7FB7600A0A8E7 /* CommunicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationManager.h; sourceTree = "<group>"; };
+		5AEABD7C17F7FB7600A0A8E7 /* CommunicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationManager.m; sourceTree = "<group>"; };
+		5AEABD8417F8064800A0A8E7 /* ApplicationConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationConstant.h; sourceTree = "<group>"; };
+		5AEABD8917F80AB500A0A8E7 /* ResponseParserEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParserEngine.h; sourceTree = "<group>"; };
+		5AEABD8A17F80AB500A0A8E7 /* ResponseParserEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParserEngine.m; sourceTree = "<group>"; };
+		5AEABD8D17F80C3600A0A8E7 /* ApplicationEnumerators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationEnumerators.h; sourceTree = "<group>"; };
+		5AEABD9117F811E500A0A8E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackroundImage.png; sourceTree = "<group>"; };
+		5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackroundImage@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A9042C517F77FCB005183D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEABD9217F811E500A0A8E7 /* SystemConfiguration.framework in Frameworks */,
+				5AEABD7A17F7FAF000A0A8E7 /* libCommunication-Simulatorv1.0.a in Frameworks */,
+				5AEABD6717F7DBD300A0A8E7 /* AudioToolbox.framework in Frameworks */,
+				5AEABD6517F7DB0600A0A8E7 /* libGeneral-Simulatorv1.0.a in Frameworks */,
+				5AEABD4817F7D9A000A0A8E7 /* CoreLocation.framework in Frameworks */,
+				5A9042CE17F77FCB005183D7 /* CoreGraphics.framework in Frameworks */,
+				5A9042D217F77FCB005183D7 /* CoreData.framework in Frameworks */,
+				5A9042D017F77FCB005183D7 /* UIKit.framework in Frameworks */,
+				5A9042CC17F77FCB005183D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9042E517F77FCB005183D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9042EA17F77FCB005183D7 /* XCTest.framework in Frameworks */,
+				5A9042ED17F77FCB005183D7 /* CoreData.framework in Frameworks */,
+				5A9042EC17F77FCB005183D7 /* UIKit.framework in Frameworks */,
+				5A9042EB17F77FCB005183D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A9042BF17F77FCB005183D7 = {
+			isa = PBXGroup;
+			children = (
+				5A9042D317F77FCB005183D7 /* HackNews */,
+				5A9042F017F77FCB005183D7 /* HackNewsTests */,
+				5A9042CA17F77FCB005183D7 /* Frameworks */,
+				5A9042C917F77FCB005183D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A9042C917F77FCB005183D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A9042C817F77FCB005183D7 /* HackNews Simulator.app */,
+				5A9042E817F77FCB005183D7 /* HackNewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A9042CA17F77FCB005183D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD9117F811E500A0A8E7 /* SystemConfiguration.framework */,
+				5AEABD6617F7DBD300A0A8E7 /* AudioToolbox.framework */,
+				5AEABD4717F7D9A000A0A8E7 /* CoreLocation.framework */,
+				5A9042CB17F77FCB005183D7 /* Foundation.framework */,
+				5A9042CD17F77FCB005183D7 /* CoreGraphics.framework */,
+				5A9042CF17F77FCB005183D7 /* UIKit.framework */,
+				5A9042D117F77FCB005183D7 /* CoreData.framework */,
+				5A9042E917F77FCB005183D7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A9042D317F77FCB005183D7 /* HackNews */ = {
+			isa = PBXGroup;
+			children = (
+				5A90430417F7809E005183D7 /* Classes */,
+				5A9042E217F77FCB005183D7 /* Images.xcassets */,
+				5A9042DF17F77FCB005183D7 /* HackNews.xcdatamodeld */,
+				5AEABD9317F81E2E00A0A8E7 /* Resources */,
+				5A9042D417F77FCB005183D7 /* Supporting Files */,
+				5AEABD4A17F7DAC100A0A8E7 /* Library */,
+			);
+			path = HackNews;
+			sourceTree = "<group>";
+		};
+		5A9042D417F77FCB005183D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9042D517F77FCB005183D7 /* HackNews-Info.plist */,
+				5A9042D617F77FCB005183D7 /* InfoPlist.strings */,
+				5A9042D917F77FCB005183D7 /* main.m */,
+				5A9042DB17F77FCB005183D7 /* HackNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A9042F017F77FCB005183D7 /* HackNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A9042F617F77FCB005183D7 /* HackNewsTests.m */,
+				5A9042F117F77FCB005183D7 /* Supporting Files */,
+			);
+			path = HackNewsTests;
+			sourceTree = "<group>";
+		};
+		5A9042F117F77FCB005183D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9042F217F77FCB005183D7 /* HackNewsTests-Info.plist */,
+				5A9042F317F77FCB005183D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A90430417F7809E005183D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5A90430517F7809E005183D7 /* Application Delegate */,
+				5A90430A17F780B6005183D7 /* View Controllers */,
+				5AEABD3D17F7D00A00A0A8E7 /* Manager */,
+				5AEABD8817F80A9100A0A8E7 /* Engine */,
+				5AEABD4217F7D8A100A0A8E7 /* Event */,
+				5AEABD8317F804ED00A0A8E7 /* Constant */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5A90430517F7809E005183D7 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5A90430617F7809E005183D7 /* AppDelegate.h */,
+				5A90430717F7809E005183D7 /* AppDelegate.m */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		5A90430A17F780B6005183D7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD3017F7CD8400A0A8E7 /* Register */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5AEABD3017F7CD8400A0A8E7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD3117F7CDB900A0A8E7 /* RegisterViewController.h */,
+				5AEABD3217F7CDB900A0A8E7 /* RegisterViewController.m */,
+				5AEABD3317F7CDB900A0A8E7 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5AEABD3D17F7D00A00A0A8E7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD3E17F7D02600A0A8E7 /* LocationManager.h */,
+				5AEABD3F17F7D02600A0A8E7 /* LocationManager.m */,
+				5AEABD7B17F7FB7600A0A8E7 /* CommunicationManager.h */,
+				5AEABD7C17F7FB7600A0A8E7 /* CommunicationManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5AEABD4217F7D8A100A0A8E7 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD4317F7D8D000A0A8E7 /* Event.h */,
+				5AEABD4417F7D8D000A0A8E7 /* Event.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		5AEABD4A17F7DAC100A0A8E7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */,
+				5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		5AEABD5817F7DAF500A0A8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD5E17F7DAF500A0A8E7 /* GeneralLibrary.app */,
+				5AEABD6017F7DAF500A0A8E7 /* libGeneral-Simulatorv1.0.a */,
+				5AEABD6217F7DAF500A0A8E7 /* libGeneral-Devicev1.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEABD6D17F7FA7800A0A8E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD7317F7FA7800A0A8E7 /* CommunicationLibrary.app */,
+				5AEABD7517F7FA7800A0A8E7 /* libCommunication-Simulatorv1.0.a */,
+				5AEABD7717F7FA7800A0A8E7 /* libCommunication-Devicev1.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AEABD8317F804ED00A0A8E7 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD8417F8064800A0A8E7 /* ApplicationConstant.h */,
+				5AEABD8D17F80C3600A0A8E7 /* ApplicationEnumerators.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		5AEABD8817F80A9100A0A8E7 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD8917F80AB500A0A8E7 /* ResponseParserEngine.h */,
+				5AEABD8A17F80AB500A0A8E7 /* ResponseParserEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		5AEABD9317F81E2E00A0A8E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD9417F81E2E00A0A8E7 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AEABD9417F81E2E00A0A8E7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD9517F81E2E00A0A8E7 /* Application Images */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5AEABD9517F81E2E00A0A8E7 /* Application Images */ = {
+			isa = PBXGroup;
+			children = (
+				5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */,
+				5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */,
+			);
+			path = "Application Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A9042C717F77FCB005183D7 /* HackNews Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9042FA17F77FCB005183D7 /* Build configuration list for PBXNativeTarget "HackNews Simulator" */;
+			buildPhases = (
+				5A9042C417F77FCB005183D7 /* Sources */,
+				5A9042C517F77FCB005183D7 /* Frameworks */,
+				5A9042C617F77FCB005183D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AEABD7917F7FAE800A0A8E7 /* PBXTargetDependency */,
+				5AEABD6417F7DB0100A0A8E7 /* PBXTargetDependency */,
+			);
+			name = "HackNews Simulator";
+			productName = HackNews;
+			productReference = 5A9042C817F77FCB005183D7 /* HackNews Simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A9042E717F77FCB005183D7 /* HackNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9042FD17F77FCB005183D7 /* Build configuration list for PBXNativeTarget "HackNewsTests" */;
+			buildPhases = (
+				5A9042E417F77FCB005183D7 /* Sources */,
+				5A9042E517F77FCB005183D7 /* Frameworks */,
+				5A9042E617F77FCB005183D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A9042EF17F77FCB005183D7 /* PBXTargetDependency */,
+			);
+			name = HackNewsTests;
+			productName = HackNewsTests;
+			productReference = 5A9042E817F77FCB005183D7 /* HackNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A9042C017F77FCB005183D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = YahooHack;
+				TargetAttributes = {
+					5A9042E717F77FCB005183D7 = {
+						TestTargetID = 5A9042C717F77FCB005183D7;
+					};
+				};
+			};
+			buildConfigurationList = 5A9042C317F77FCB005183D7 /* Build configuration list for PBXProject "HackNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A9042BF17F77FCB005183D7;
+			productRefGroup = 5A9042C917F77FCB005183D7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5AEABD6D17F7FA7800A0A8E7 /* Products */;
+					ProjectRef = 5AEABD6C17F7FA7800A0A8E7 /* CommunicationLibrary.xcodeproj */;
+				},
+				{
+					ProductGroup = 5AEABD5817F7DAF500A0A8E7 /* Products */;
+					ProjectRef = 5AEABD5717F7DAF500A0A8E7 /* GeneralLibrary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5A9042C717F77FCB005183D7 /* HackNews Simulator */,
+				5A9042E717F77FCB005183D7 /* HackNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5AEABD5E17F7DAF500A0A8E7 /* GeneralLibrary.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GeneralLibrary.app;
+			remoteRef = 5AEABD5D17F7DAF500A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5AEABD6017F7DAF500A0A8E7 /* libGeneral-Simulatorv1.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGeneral-Simulatorv1.0.a";
+			remoteRef = 5AEABD5F17F7DAF500A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5AEABD6217F7DAF500A0A8E7 /* libGeneral-Devicev1.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGeneral-Devicev1.0.a";
+			remoteRef = 5AEABD6117F7DAF500A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5AEABD7317F7FA7800A0A8E7 /* CommunicationLibrary.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CommunicationLibrary.app;
+			remoteRef = 5AEABD7217F7FA7800A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5AEABD7517F7FA7800A0A8E7 /* libCommunication-Simulatorv1.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCommunication-Simulatorv1.0.a";
+			remoteRef = 5AEABD7417F7FA7800A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5AEABD7717F7FA7800A0A8E7 /* libCommunication-Devicev1.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCommunication-Devicev1.0.a";
+			remoteRef = 5AEABD7617F7FA7800A0A8E7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A9042C617F77FCB005183D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9042D817F77FCB005183D7 /* InfoPlist.strings in Resources */,
+				5AEABD9817F81E2E00A0A8E7 /* BackroundImage.png in Resources */,
+				5A9042E317F77FCB005183D7 /* Images.xcassets in Resources */,
+				5AEABD9A17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */,
+				5AEABD3617F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9042E617F77FCB005183D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9042F517F77FCB005183D7 /* InfoPlist.strings in Resources */,
+				5AEABD3717F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */,
+				5AEABD9B17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */,
+				5AEABD9917F81E2E00A0A8E7 /* BackroundImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A9042C417F77FCB005183D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEABD4517F7D8D000A0A8E7 /* Event.m in Sources */,
+				5A9042E117F77FCB005183D7 /* HackNews.xcdatamodeld in Sources */,
+				5AEABD4017F7D02600A0A8E7 /* LocationManager.m in Sources */,
+				5AEABD8B17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */,
+				5A9042DA17F77FCB005183D7 /* main.m in Sources */,
+				5A90430817F7809E005183D7 /* AppDelegate.m in Sources */,
+				5AEABD3417F7CDB900A0A8E7 /* RegisterViewController.m in Sources */,
+				5AEABD7D17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9042E417F77FCB005183D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEABD7E17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */,
+				5AEABD4117F7D02600A0A8E7 /* LocationManager.m in Sources */,
+				5A90430917F7809E005183D7 /* AppDelegate.m in Sources */,
+				5AEABD4617F7D8D000A0A8E7 /* Event.m in Sources */,
+				5AEABD8C17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */,
+				5AEABD3517F7CDB900A0A8E7 /* RegisterViewController.m in Sources */,
+				5A9042F717F77FCB005183D7 /* HackNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A9042EF17F77FCB005183D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A9042C717F77FCB005183D7 /* HackNews Simulator */;
+			targetProxy = 5A9042EE17F77FCB005183D7 /* PBXContainerItemProxy */;
+		};
+		5AEABD6417F7DB0100A0A8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LibGeneral simulator";
+			targetProxy = 5AEABD6317F7DB0100A0A8E7 /* PBXContainerItemProxy */;
+		};
+		5AEABD7917F7FAE800A0A8E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LibCommunication simulator";
+			targetProxy = 5AEABD7817F7FAE800A0A8E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A9042D617F77FCB005183D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9042D717F77FCB005183D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A9042F317F77FCB005183D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9042F417F77FCB005183D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A9042F817F77FCB005183D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.nathan.pushnotification";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.nathan.pushnotification";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A9042F917F77FCB005183D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.nathan.pushnotification";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.nathan.pushnotification";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A9042FB17F77FCB005183D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Furqan Kamani (2GWF494SQ4)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackNews/HackNews-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/HackNews/Library/HeaderFiles/GeneralLibrary\"",
+					"\"$(SRCROOT)/HackNews/Library/HeaderFiles/CommunicationLibrary\"",
+				);
+				INFOPLIST_FILE = "HackNews/HackNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "84B8681B-094D-4913-B13D-BE308A217818";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A9042FC17F77FCB005183D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Furqan Kamani (2GWF494SQ4)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackNews/HackNews-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/HackNews/Library/HeaderFiles/GeneralLibrary\"",
+					"\"$(SRCROOT)/HackNews/Library/HeaderFiles/CommunicationLibrary\"",
+				);
+				INFOPLIST_FILE = "HackNews/HackNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "84B8681B-094D-4913-B13D-BE308A217818";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A9042FE17F77FCB005183D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HackNews.app/HackNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackNews/HackNews-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HackNewsTests/HackNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5A9042FF17F77FCB005183D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HackNews.app/HackNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackNews/HackNews-Prefix.pch";
+				INFOPLIST_FILE = "HackNewsTests/HackNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A9042C317F77FCB005183D7 /* Build configuration list for PBXProject "HackNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9042F817F77FCB005183D7 /* Debug */,
+				5A9042F917F77FCB005183D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9042FA17F77FCB005183D7 /* Build configuration list for PBXNativeTarget "HackNews Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9042FB17F77FCB005183D7 /* Debug */,
+				5A9042FC17F77FCB005183D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9042FD17F77FCB005183D7 /* Build configuration list for PBXNativeTarget "HackNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9042FE17F77FCB005183D7 /* Debug */,
+				5A9042FF17F77FCB005183D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A9042DF17F77FCB005183D7 /* HackNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A9042E017F77FCB005183D7 /* HackNews.xcdatamodel */,
+			);
+			currentVersion = 5A9042E017F77FCB005183D7 /* HackNews.xcdatamodel */;
+			path = HackNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A9042C017F77FCB005183D7 /* Project object */;
+}

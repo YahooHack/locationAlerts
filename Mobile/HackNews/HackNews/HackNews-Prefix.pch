@@ -1,0 +1,53 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <CoreLocation/CoreLocation.h>
+
+// General Library
+#import "DataPersistence.h" //  This class is used for accessing file function
+#import "Utility.h" // this is used for access the general utility functions
+
+// Communication Library
+#import "CommContainer.h"
+#import "CommDataContainer.h"
+#import "CommImageContainer.h"
+#import "CommunicationEngine.h"
+#import "Request.h"
+#import "Response.h"
+#import "CommunicationConstant.h"
+#import "CommunicationEvent.h" // this is used for using communication event
+
+// Constant
+#import "ApplicationConstant.h" //  This class is used for access application constants.
+#import "ApplicationEnumerators.h" //  This class is used for access application enumerations.
+
+// Event
+#import "Event.h" //  This class is used for access the notification type.
+
+// Engine
+#import "ResponseParserEngine.h" // This class is used for providing response parsing functions, which are useful for parsing server response related to this application
+
+// Manager
+#import "LocationManager.h" //  This class is used for access the location function
+#import "CommunicationManager.h" //  This class is used for providing communication functions, which are useful for performing HTTP communication with server in this application.
+
+// View Controllers
+#import "RegisterViewController.h" //  This view controller class is used for allow user to register.
+
+// Application Delegate
+#import "AppDelegate.h" //  This class is used as a starting point of application.
+
+#endif

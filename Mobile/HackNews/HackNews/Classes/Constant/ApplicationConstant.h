@@ -12,10 +12,10 @@
 @interface ApplicationConstant : NSObject
 
 // server url string
-#define strServerURL @"http://projects.redirectme.net:8081/labexpdev/service.svc/"
+#define strServerURL @"http://www.hackalerts.com"
 
 // request uri
-#define strLocationRequestURI @"CheckLoginCredentials?username=fkamani&password=fkamani"
+#define strLocationRequestURI @"sendLocation?latitude=%f&longitude=%f"
 
 // global dictionary key string
 #define strServerRequestTypeEnumValueKey @"SERVER_REQUEST_TYPE_ENUM_VALUE_KEY"

@@ -44,6 +44,10 @@
 		5AEABD9917F81E2E00A0A8E7 /* BackroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */; };
 		5AEABD9A17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */; };
 		5AEABD9B17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */; };
+		5AEABDBA17F8A05200A0A8E7 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABDB817F8A05200A0A8E7 /* NewsViewController.m */; };
+		5AEABDBB17F8A05200A0A8E7 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEABDB817F8A05200A0A8E7 /* NewsViewController.m */; };
+		5AEABDBC17F8A05200A0A8E7 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABDB917F8A05200A0A8E7 /* NewsViewController.xib */; };
+		5AEABDBD17F8A05200A0A8E7 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEABDB917F8A05200A0A8E7 /* NewsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,9 @@
 		5AEABD9117F811E500A0A8E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5AEABD9617F81E2E00A0A8E7 /* BackroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackroundImage.png; sourceTree = "<group>"; };
 		5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackroundImage@2x.png"; sourceTree = "<group>"; };
+		5AEABDB717F8A05200A0A8E7 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		5AEABDB817F8A05200A0A8E7 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		5AEABDB917F8A05200A0A8E7 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,8 +292,8 @@
 		5A90430A17F780B6005183D7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5AEABDB217F8A03C00A0A8E7 /* News */,
 				5AEABD3017F7CD8400A0A8E7 /* Register */,
+				5AEABDB217F8A03C00A0A8E7 /* News */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -396,6 +403,9 @@
 		5AEABDB217F8A03C00A0A8E7 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				5AEABDB717F8A05200A0A8E7 /* NewsViewController.h */,
+				5AEABDB817F8A05200A0A8E7 /* NewsViewController.m */,
+				5AEABDB917F8A05200A0A8E7 /* NewsViewController.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -537,6 +547,7 @@
 				5A9042E317F77FCB005183D7 /* Images.xcassets in Resources */,
 				5AEABD9A17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */,
 				5AEABD3617F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */,
+				5AEABDBC17F8A05200A0A8E7 /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +557,7 @@
 			files = (
 				5A9042F517F77FCB005183D7 /* InfoPlist.strings in Resources */,
 				5AEABD3717F7CDB900A0A8E7 /* RegisterViewController.xib in Resources */,
+				5AEABDBD17F8A05200A0A8E7 /* NewsViewController.xib in Resources */,
 				5AEABD9B17F81E2E00A0A8E7 /* BackroundImage@2x.png in Resources */,
 				5AEABD9917F81E2E00A0A8E7 /* BackroundImage.png in Resources */,
 			);
@@ -564,6 +576,7 @@
 				5AEABD8B17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */,
 				5A9042DA17F77FCB005183D7 /* main.m in Sources */,
 				5A90430817F7809E005183D7 /* AppDelegate.m in Sources */,
+				5AEABDBA17F8A05200A0A8E7 /* NewsViewController.m in Sources */,
 				5AEABD3417F7CDB900A0A8E7 /* RegisterViewController.m in Sources */,
 				5AEABD7D17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */,
 			);
@@ -576,6 +589,7 @@
 				5AEABD7E17F7FB7600A0A8E7 /* CommunicationManager.m in Sources */,
 				5AEABD4117F7D02600A0A8E7 /* LocationManager.m in Sources */,
 				5A90430917F7809E005183D7 /* AppDelegate.m in Sources */,
+				5AEABDBB17F8A05200A0A8E7 /* NewsViewController.m in Sources */,
 				5AEABD4617F7D8D000A0A8E7 /* Event.m in Sources */,
 				5AEABD8C17F80AB500A0A8E7 /* ResponseParserEngine.m in Sources */,
 				5AEABD3517F7CDB900A0A8E7 /* RegisterViewController.m in Sources */,

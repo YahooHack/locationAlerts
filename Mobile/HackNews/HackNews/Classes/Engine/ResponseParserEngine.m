@@ -86,7 +86,7 @@
                             
                             if ([arrayNewsResult count] > 0)
                             {
-                                oNotification  = [NSNotification notificationWithName:[Event newsSuccessfullyFetchNotification] object:nil userInfo:nil]; // create news successfully fetch request success notification
+                                oNotification  = [NSNotification notificationWithName:[Event newsSuccessfullyFetchNotification] object:nil userInfo:arrayNewsResult]; // create news successfully fetch request success notification
                             }
                         }
                     }

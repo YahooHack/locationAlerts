@@ -148,7 +148,7 @@ static CommunicationManager *oSharedCommunicationManager = nil;
             
             oCommunicationDataContainer.request.httpRequestMethodEnumValue = GetRequest;
             
-            [oCommunicationDataContainer.request setHandlerName:strLocationRequestURI];
+            [oCommunicationDataContainer.request setHandlerName:[NSString stringWithFormat:strLocationRequestURI,fLatitude,fLongitude]];
             
             [oCommunicationDataContainer.request addHeader:@"Content-Type" withHeaderValue:@"application/x-www-form-urlencoded"];
             

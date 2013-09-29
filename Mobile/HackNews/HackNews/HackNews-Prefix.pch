@@ -46,6 +46,7 @@
 
 // View Controllers
 #import "RegisterViewController.h" //  This view controller class is used for allow user to register.
+#import "NewsViewController.h" //  This view controller class is used for showing news to users.
 
 // Application Delegate
 #import "AppDelegate.h" //  This class is used as a starting point of application.

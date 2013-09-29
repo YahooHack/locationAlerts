@@ -177,6 +177,50 @@ static CommunicationManager *oSharedCommunicationManager = nil;
     return nil;
 }
 
+// this function takes query string in parameter and send request to yahoo server
+- (NSString*) sendFetchYahooNews:(NSString*)strQuery
+{
+    BOOL bIsRequestSuccessfullySend = FALSE; // create boolean for storing is request successfully send.
+    @try
+    {
+        CommDataContainer *oCommunicationDataContainer = [[[CommDataContainer alloc] init] autorelease]; // create comm data container object
+		if (oCommunicationDataContainer) // this check execute if communication data container is not null
+        {
+            [oCommunicationDataContainer.request clearRequest];
+            
+            [oCommunicationDataContainer.request addCustomObject:strServerRequestTypeEnumValueKey withValue:[NSNumber numberWithInteger:NEWS_FETCH_REQUEST]]; // send news fetch request type enum value in custom object
+            
+            oCommunicationDataContainer.containerPriorityEnum = MediumPriorityContainer;
+            
+            oCommunicationDataContainer.request.httpRequestMethodEnumValue = GetRequest;
+            
+            [oCommunicationDataContainer.request setHostName:[NSString stringWithFormat:@"%@%@%@",@"http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20boss.search%20where%20q%3D%22",strQuery,@"%22%20AND%20ck%3D%22dj0yJmk9YWF3ODdGNWZPYjg2JmQ9WVdrOWVsWlZNRk5KTldFbWNHbzlNVEEyTURFNU1qWXkmcz1jb25zdW1lcnNlY3JldCZ4PTUz%22%20AND%20secret%3D%22a3d93853ba3bad8a99a175e8ffa90a702cd08cfa%22%3B&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback="]];
+            
+            if([_oCommunicationEngine startProcessObject:oCommunicationDataContainer]) // this function return true if connection is reachable and add communication data container object in communication engine for processing
+            {
+                [_arrCommunicationContainer addObject:oCommunicationDataContainer]; // add commDataContainer object in local array
+                
+                bIsRequestSuccessfullySend = true;
+                
+                return oCommunicationDataContainer.UUidString;
+            }
+        }
+    }
+    @catch (NSException * e)
+    {
+        UIAlertView *oAlertView = [[[UIAlertView alloc] initWithTitle:[e name] message:[e reason] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] autorelease];
+		[oAlertView show];
+    }
+    @finally
+    {
+        if (!bIsRequestSuccessfullySend) {
+			return nil;
+		}
+    }
+    
+    return nil;
+}
+
 // this function takes UUID string in parameter and remove communication container object from an array.
 - (void) removeCommContainerObjectfromQueue:(NSString*)strUUID
 {

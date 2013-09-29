@@ -285,6 +285,7 @@
 		5A90430A17F780B6005183D7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5AEABDB217F8A03C00A0A8E7 /* News */,
 				5AEABD3017F7CD8400A0A8E7 /* Register */,
 			);
 			path = "View Controllers";
@@ -390,6 +391,13 @@
 				5AEABD9717F81E2E00A0A8E7 /* BackroundImage@2x.png */,
 			);
 			path = "Application Images";
+			sourceTree = "<group>";
+		};
+		5AEABDB217F8A03C00A0A8E7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

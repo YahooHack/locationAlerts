@@ -21,5 +21,6 @@ typedef enum {
 // this is used for identify server request type
 typedef enum {
 	UNKNOWN_SERVER_REQUEST = -1,
-	LOCATION_REQUEST = 0
+	LOCATION_REQUEST = 0,
+    NEWS_FETCH_REQUEST = 1
 } SERVER_REQUEST_TYPE_ENUM;

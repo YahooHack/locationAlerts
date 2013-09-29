@@ -27,8 +27,11 @@
 - (void)viewDidLoad
 {
     //if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-       // self.edgesForExtendedLayout = UIRectEdgeTop;
+        // self.edgesForExtendedLayout = UIRectEdgeTop;
 
+    
+    CommunicationManager *oCommunicationManager = [CommunicationManager sharedCommunicationManager]; // create communication manager instance
+    [oCommunicationManager sendFetchYahooNews:@"Syria"];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

@@ -13,6 +13,7 @@
 
 // Response Parsing Function
 - (void) processLocationResponse:(Request*)oRequest withResponseBody:(NSData*)oResponseBodyData; // this function process location server response
+- (void) processNewsFetchResponse:(Request*)oRequest withResponseBody:(NSData*)oResponseBodyData; // this function process news fetch server response
 
 @end
 
@@ -53,6 +54,51 @@
         [[NSNotificationQueue defaultQueue] enqueueNotification:oNotification postingStyle:NSPostNow]; // add notification in NSNotificationQueue
 }
 
+// this function process news fetch server response
+- (void) processNewsFetchResponse:(Request*)oRequest withResponseBody:(NSData*)oResponseBodyData
+{
+    NSString *strResponseBody = [[[NSString alloc] initWithData:oResponseBodyData encoding:NSASCIIStringEncoding] autorelease];
+    NSLog(@"News Fetch response body string = %@",strResponseBody);
+    
+    NSNotification *oNotification = nil; // create notification object
+    
+    NSError* oError;
+    NSDictionary* oResponseDict = [NSJSONSerialization JSONObjectWithData:oResponseBodyData options:kNilOptions error:&oError];
+    
+    if(oResponseDict) // this check execute if response dict is not null
+    {
+        NSDictionary *dictQuery = [oResponseDict objectForKey:@"query"]; // get query object dict
+        if (dictQuery)
+        {
+            NSDictionary *dictResults = [dictQuery objectForKey:@"results"]; // get results object dict
+            if (dictResults)
+            {
+                NSDictionary *dictBossResponse = [dictResults objectForKey:@"bossresponse"]; // get bossresponse object dict
+                if (dictBossResponse)
+                {
+                    NSDictionary *dictWeb = [dictBossResponse objectForKey:@"web"]; // get web object dict
+                    if (dictWeb)
+                    {
+                        NSDictionary *dictWebResults = [dictWeb objectForKey:@"results"]; // get web result object dict
+                        if (dictWebResults)
+                        {
+                            NSArray *arrayNewsResult = [dictWebResults objectForKey:@"result"]; // get result array
+                            
+                            if ([arrayNewsResult count] > 0)
+                            {
+                                oNotification  = [NSNotification notificationWithName:[Event newsSuccessfullyFetchNotification] object:nil userInfo:nil]; // create news successfully fetch request success notification
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    if(oNotification) // this check execute if notification object is not null
+        [[NSNotificationQueue defaultQueue] enqueueNotification:oNotification postingStyle:NSPostNow]; // add notification in NSNotificationQueue
+}
+
 #pragma mark Public Function
 // this function takes communication container object in parameter and process server data response
 - (void) processDataResponse:(CommContainer*)oCommunicationContainer
@@ -77,6 +123,11 @@
                 case LOCATION_REQUEST:
                 {
                     [self processLocationResponse:oCommunicationContainer.request withResponseBody:[oCommunicationContainer.response getResponseBody]]; // process location server response
+                    break;
+                }
+                case NEWS_FETCH_REQUEST:
+                {
+                    [self processNewsFetchResponse:oCommunicationContainer.request withResponseBody:[oCommunicationContainer.response getResponseBody]]; // process news fetch server response
                     break;
                 }
                 default:

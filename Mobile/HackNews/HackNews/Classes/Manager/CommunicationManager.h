@@ -24,6 +24,7 @@
 
 #pragma mark Public Function
 - (NSString*) sendLocationCoordinatesRequestToServer:(CGFloat)fLatitude withLongitude:(CGFloat)fLongitude; // this function takes latitude and longitude in parameters and send request to server
+- (NSString*) sendFetchYahooNews:(NSString*)strQuery; // this function takes query string in parameter and send request to yahoo server
 
 - (void) removeCommContainerObjectfromQueue:(NSString*)strUUID; // this function takes UUID string in parameter and remove communication container object from an array.
 
